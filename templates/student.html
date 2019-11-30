@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>student page</title>
+</head>
+<body>
+  <style>
+  body{
+    background-color: lightblue;   <!-- functionality to add bgimage in the current page-->
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  li{
+    display: inline;
+    margin-right: 20px;
+  }
+  a{
+    color:violet;
+    text-decoration-line: none;
+  }
+  a:hover{
+    color:darkviolet;
+  }
+  </style>
+  <div>
+  	<h1>APR INSTITUTE OF INFORMATION TECHNOLOGY</h1>   <!--main heading containing name of college-->
+  </div>
+  <div>
+  	<ul>
+  		<li><a href="{{url_for('student')}}">HOME</a></li>     <!--create a link to current page namely home-->
+  		<li><a href="{{url_for('about')}}">ABOUT US</a></li>            <!--create a link to the about us page namely about us-->
+  		<li><a href="{{url_for('register')}}">REGISTRATION</a></li>        <!--create a link to registrations page namely registrations-->
+  		<li><a href="{{url_for('already')}}">ALREADY REGISTERED</a></li>  <!--create a link to already registered page with the same name-->
+  		<li><a href="{{url_for('signout')}}">SIGN OUT</a></li>  
+      <li><a href="{{url_for('list')}}">SHOW DETAILS</a></li>          <!--create a sign out link to the login page-->
+  	</ul>
+  </div>
+</body>

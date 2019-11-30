@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body{
+		background:lightblue;
+	}
+	.formgroup{
+		text-align:center;
+	}
+	h1{
+		color:crimson;
+		text-align: center;
+	}
+	.formgroup label{
+		color:darkgreen;
+	}
+	.formgroup input[type="submit"]{
+		color:red;
+		width:100px;
+		font-size: 20px;
+	}
+</style>
+<head>
+  <title>login page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<h1>Enter a New World</h1>
+	<form action="/home" method="POST">
+		<div class=formgroup>
+			<label>username:</label>
+			<input type="name" name="name">
+      		<br>
+      		<br>
+			<label>password:</label>
+			<input type="PASSWORD" name="password">
+			<br>
+      <br>
+			<input class="button" type="submit" value="login" name="">
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>student page</title>
+  <style >
+  	body{
+	background: skyblue;
+	}
+	h1{
+		color: #9332ab;
+	}
+	.formgroup{
+		background: lightgreen;
+	}
+	.formgroup input[type='text']{
+		background-color: lightgrey;
+		border-radius: 10px;
+		height:20px;
+	}
+	.formgroup input[type='Email']{
+		background-color: lightgrey;
+		border-radius: 10px;
+		height:20px;
+	}
+	.formgroup input[type='Number']{
+		background-color: lightgrey;
+		border-radius: 10px;
+		height:20px;
+	}
+	.formgroup input[type='submit']{
+		margin: 10px;
+		width: 100px;
+		height: 30px;
+		font-size: 20px;
+	}
+	.formgroup label{
+		color: black;
+		margin: 10px;
+	}
+  </style>
+</head>
+<body>
+	<form class="myform" action="/reg" method="POST">
+		<h1 style="text-align:center;">Enter your details here</h1>
+		<div class="formgroup">
+			<label style="display: block;">Name:</label>
+			<input type="text" value="" name="name">
+			<label style="display: block;">Father's Name:</label>
+			<input type="text" value="" name="Father">
+			<label style="display: block;">Phone Number:</label>
+			<input type="Number" value="" name="number">
+			<label style="display: block;">Email:</label>
+			<input type="Email" value="" name="email">
+			<label style="display: block;">Cutoff in ARPIITEE:</label>
+			<input type="Number" value="" name="rank">
+			<label style="display: block;">Telephone number:</label>
+			<input type="Number" value="" name="telephone">
+			<br>
+			<br>
+			<p>Choose your Dorm
+				<select name="dorm">
+					<option value="CSE">CSE</option>
+					<option value="ECE">ECE</option>
+				</select>
+			</p>
+			<br>
+			<input class="button" type="submit" value="Submit">
